@@ -1,0 +1,32 @@
+body {
+    font-size: 20pt;
+}
+
+input {
+    font-size: 18pt;
+}
+button {
+    font-size: 18pt;
+}
+
+.images{
+	display: flex;
+	position: relative;
+	margin: 0;
+	font-size: 0;
+    top: 0;
+    left: 0;
+	transition: left 2s;
+}
+.slider{
+	width: 800px;
+	height: 480px;
+	overflow-x: hidden;
+}
+
+nav{
+	position: fixed;
+	top: 200; 
+	left: 0;
+	z-index: 1000;
+}
