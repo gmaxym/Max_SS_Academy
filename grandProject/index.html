@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourWorth</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <form action="#" class="form-inline">
+          
+          <input type="number" min="0.00" step="0.01" id="salaryInput"class="form-control" placeholder="Enter your salary">
+            <select id="currency" class="currency" name="currency">
+            <option value=" UAH">UAH</option>
+            <option value=" USD">USD</option>
+            <option value=" EUR">EUR</option>
+          </select>
+          
+        </form>
+       
+        <h2 id="resultDay"></h2>
+        <h2 id="resultHour"></h2>
+        <h2 id="resultMinute"></h2>
+
+      </div>
+
+      <div class="timer">
+        <h1>The cost of waiting time</h1>  
+        <div id="waitCost">0</div>
+        <div id="timer">00:00</div>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <button id="stop">stop</button>
+      </div>
+    <script src="./app/main.js"></script>
+    <script src="./app/timer.js"></script>
+
+</body>
+</html>
