@@ -1,76 +1,124 @@
-body{
-    margin: 0 3%;
-    /* background-color: #eef269; */
-    /* background-color: #2196f3; */
-    text-align: center;
-      background-color: goldenrod;
-      font-family: 'Roboto Mono', monospace;
-   }
-
-.container{
-    background-color: #2196f3;
-    width: 100%;
-    max-width: 1280px;
-    min-width: 250px;
-    margin: 3% auto;
-    padding: 2% 0;
-    border-radius: 20px;
+body {
+	margin: 1% 3%;
+	text-align: center;
+	background-color: #272727;
+    font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #d2af44;
 }
 
-::placeholder{
-    color: black;
+.container {
+	background-color: rgba(33, 150, 243, .43);
+	width: 100%;
+	max-width: 680px;
+	min-width: 250px;
+	margin: 3% auto 0px;
+	padding: 3% 0 3%;
+	border-radius: .5em .5em 0 0;
+	border: 1px solid silver;
 }
-input,select{    
-    background-color: goldenrod;
-    outline: none;
-    border:  1px solid blue;
-    border-radius: 5px;
+.timer{
+	background-color: rgb(25, 61, 91);
+	width: 100%;
+	max-width: 680px;
+	min-width: 250px;
+	margin: 0 auto;
+	padding: 2% 0 3% 0;
+	border-radius: 0 0 0 0;
+	border: 1px solid silver;
 }
-input, select, h2{
-       font-size: 20px;
-       text-align: center;
-   }
-form{
-    display: inline-flex;
-    padding: 0 auto;
-    /* max-width: 350px; */
-    margin: 5% auto;
-    }
+.saveBox{
+	background-color: rgb(19, 45, 67);
+	width: 100%;
+	max-width: 680px;
+	min-width: 250px;
+	margin: 0px auto;
+	padding: 3% 0 4% 0;
+	border-radius: 0 0 .5em .5em;
+	border: 1px solid silver;
+}
+
+p{
+	margin: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .85px; 
+
+}
+p#timer,p#price{
+	font-size: 1.6em;
+}
+p#price{
+	margin-top: 3%
+}
+p#timer{
+	margin-bottom: 4%;
+}
+#costOfWasting{
+	text-transform: uppercase;
+}
+
+
+::placeholder {
+	color: gba(0, 0, 0, .9);
+	font-family: 'Oswald', sans-serif;
+	padding: 0 10px;
+}
+
+input, select {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+input {	
+/* 	border: 1px solid blue; */
+	border-radius: 5px 0 0 5px;
+	padding: 0 10px 0 10px;
+	background-color: goldenrod;
+	text-transform: uppercase;
+}
 select {
-    margin: 0 1%;
+	padding: 0 10px 0 10px;
+	margin-left: 5px;
+	border-radius: 0 5px 5px 0;
+	background-color: #da9021;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 }
-/* --------------------------------------------------------- */
-/* body {
-    background: #FF7373;
-    color: #fff;
-    font-family: 'Roboto Mono', monospace;
-  } */
-  
-  h1 {
-    font-size: 32px;
-    margin-bottom: 4px;
-  }
-  
-  #timer, #waitCost {
-    font-size: 43px;
-    margin-bottom: 15px;
-  }
-  
-  button {
-    padding: 10px 30px;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 8px;
-    font-size: 16px;
-    margin: 0 5px;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  button:hover{
-    border: 1px solid #2196f3;
-    /* color: #FF7373; */
-    color: #2196f3;
-    background: #fff;
-  }
+form {
+	display: inline-flex;
+	padding: 0 auto;
+	margin: 2% auto;
+}
+
+button {
+	padding: 10px 30px;
+	background: none;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: .3em;
+	font-size: 16px;
+	margin: 3px 5px;
+	outline: none;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+button:hover {
+	border: 1px solid #da9021;
+	color: #000000;
+	background-color: #da9021;
+}
+#filename {
+	width: 250px;
+	border-radius: 5px;
+	margin: 2% 2% 3%;
+}
+#hiddenBox {
+	display: none;
+}
+#hiddenBox2 {
+	display: none;
+}
