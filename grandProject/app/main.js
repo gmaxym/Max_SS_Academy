@@ -33,6 +33,7 @@ function calculation() {
 	resultHour.innerHTML = "Your hour cost : " + costPerHour;
 	resultMinute.innerHTML = "Your minute cost : " + costPerMinute;
 	formula = res;
+	priceFromStart.innerHTML = "0.00" + currency.value;
 };
 
 function showTimerBox() {
@@ -90,6 +91,7 @@ function Stopwatch(elem) {
 		if (this.isOn) {
 			time += delta();
 		}
+
 		priceTimeInSeconds = time / 1000 * priceTimeInSecondsCost;
 		pricePerSecond.innerHTML = priceTimeInSeconds.toFixed(2) + currency.value; //out to page cost per second
 		let formattedTime = timeFormatted(time);
