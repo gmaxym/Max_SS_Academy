@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourWorth</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+	<meta charset="UTF-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<title>YourWorth</title>
+	<link href="./styles/styles.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
-        
-        <form action="#" class="form-inline">
-          
-          <input type="number" min="0.00" step="0.01" id="salaryInput"class="form-control" placeholder="Enter your salary">
-            <select id="currency" class="currency" name="currency">
-            <option value=" UAH">UAH</option>
-            <option value=" USD">USD</option>
-            <option value=" EUR">EUR</option>
-          </select>
-          
-        </form>
-       
-        <h2 id="resultDay"></h2>
-        <h2 id="resultHour"></h2>
-        <h2 id="resultMinute"></h2>
+	<!-- CALCULATOR -->
+	<div class="container">
+    <!-- <div id="myPrevious" onclick="fillInput()"><span>My previous salary</span></div> -->
+		<form action="#" class="form-inline">
+			<input class="form-control" id="salaryInput" min="0.00" onkeyup="showTimerBox()" placeholder=
+			"Enter your salary" step="0.1" type="number"> <select class="currency" id="currency" name=
+			"currency">
+				<option value=" UAH">
+					UAH
+				</option>
+				<option value=" USD">
+					USD
+				</option>
+				<option value=" EUR">
+					EUR
+				</option>
+			</select>
+		</form>
+		<p id="resultDay"></p>
+		<p id="resultHour"></p>
+		<p id="resultMinute"></p>
+	</div><!-- TIMER -->
+	<div class="timer" id="hiddenBox">
+    <p id="costOfWasting">The cost of wasting time:</p>
+		 <p id="price">0.00</p>
+		<p id="timer">00:00:00</p>
+		<div>
+      <button id="toggle">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div><!-- end TIMER -->
+	
 
-      </div>
+		 <!-- SAVE box -->
+		<div id="hiddenBox2" class="saveBox">
+			<br>
+			<label for="filename"><input id="filename" placeholder="Enter your file name" value=""></label>
+      <br>
+      <button onclick="saveFormAsTextFile()">Save to File</button>
+		</div><!-- / SAVE box -->
+  
 
-      <div class="timer">
-        <h1>The cost of waiting time</h1>  
-        <div id="waitCost">0</div>
-        <div id="timer">00:00</div>
-        <button id="start">Start</button>
-        <button id="reset">Reset</button>
-        <button id="stop">stop</button>
-      </div>
-    <script src="./app/main.js"></script>
-    <script src="./app/timer.js"></script>
-
+	<script src="./app/main.js">
+	</script>
 </body>
 </html>
